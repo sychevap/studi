@@ -5,7 +5,7 @@ data_structure = [
     "Hello", ((), [{(2, 'Urban', ('Urban2', 35))}])]
 
 def calculate_structure_sum(data_structure):
-    total_sum = 0  
+    total_sum = 0
 
     def recurse(data):
         nonlocal total_sum
@@ -19,8 +19,11 @@ def calculate_structure_sum(data_structure):
                 recurse(key)
         elif isinstance(data, int):  
             total_sum += data
-        elif isinstance(data, str):  
+        elif isinstance(data, str):
             total_sum += len(data)
 
     recurse(data_structure)
     return total_sum
+
+result = calculate_structure_sum(data_structure)
+print(result)
