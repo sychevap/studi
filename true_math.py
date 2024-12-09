@@ -1,6 +1,8 @@
 # true_math.py
 
+from math import inf
+
 def divide(a, b):
     if b == 0:
-        return None
+        return inf
     return a / b
