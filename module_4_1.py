@@ -3,10 +3,12 @@
 from fake_math import divide as fake_divide
 from true_math import divide as true_divide
 
-num = 10
+result1 = fake_divide(69, 3)
+result2 = fake_divide(3, 0)
+result3 = true_divide(49, 7)
+result4 = true_divide(15, 0)
 
-fake_result = fake_divide(num, 0)
-true_result = true_divide(num, 0)
-
-print(f"Результат fake_divide: {fake_result}")
-print(f"Результат true_divide: {true_result}")
+print(result1)
+print(result2)
+print(result3)
+print(result4)
